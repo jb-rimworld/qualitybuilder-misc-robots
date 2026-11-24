@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>QualityBuilder × Misc. Robots</name>
+    <author>juliusberger00</author>
+    <packageId>juliusberger00.qualitybuilderrobots</packageId>
+    <modVersion>1.1.0</modVersion>
+    <supportedVersions>
+        <li>1.6</li>
+        <li>1.7</li>
+    </supportedVersions>
+    <description>Your Misc. Robots finally get to build again. Only the things they can actually pull off, though. Somebody here has to have standards.
+
+== THE PROBLEM ==
+QualityBuilder only lets colonists (and Biotech mechs with an overseer) finish frames that carry a minimum quality. Misc. Robots are neither. So the moment QualityBuilder is active, every builder bot gets thrown off every marked frame and stands around holding its tools like an intern on day one.
+
+== WHAT THIS MOD DOES ==
+For every marked frame it reads the minimum quality you set (say, a double bed on Normal) and asks one question: can this robot's quality roll reach that at all?
+- It reads your Static Quality settings live: skill thresholds and mode (exact, ±1, ±2, cheat), including "Legendary requires inspiration". Robots are never inspired, so there they top out at Masterwork.
+- Example: on ±2, even a robot whose skill only gives Awful can roll up to Normal (Awful +2). It may build Normal beds, but not Excellent ones. Ambition has limits.
+- Without Static Quality (vanilla rules) the roll is random. A robot may build if its chance to reach the target is at least a threshold you pick (default 5%), computed from the vanilla formula.
+- A robot whose skill reaches QualityBuilder's own "ignore at skill" setting (default 20) may build anything.
+- The roll itself stays completely normal. If the result is too low, QualityBuilder tears it down and rebuilds, exactly as it always does.
+- Colonists and Biotech mechs keep QualityBuilder's original rules. Robots never count as "best builder", so they can't raise the bar for your colonists.
+
+== BONUS FIX (optional, on by default) ==
+Vanilla treats Misc. Robots as mechanoids and rolls every robot's quality with a fixed skill of 10, the cheapest bot and the top tier alike. With this on, robots roll with the skill from their own definition (4 / 8 / 13 / 16 / 20 for the Misc. Robots++ builder tiers). This applies to everything robots make, not just buildings.
+
+== SETTINGS ==
+- A live table: every robot with construction work, its skill, and which target qualities it may take on under your current rules.
+- Respect QualityBuilder's "best constructor" override (on by default) and its "exclude mechanoids" option (off by default).
+- Minimum chance to reach the target quality, for vanilla rules.
+- A debug log that explains every allow/block decision.
+
+== COMPATIBILITY ==
+- RimWorld 1.6 and 1.7.
+- Requires: Harmony, QualityBuilder (Unofficial 1.6, which also covers 1.7), Misc. Robots. Optional: Static Quality, Misc. Robots++.
+- No hard references. QualityBuilder, Misc. Robots and Static Quality are reached by reflection, and every patch switches itself off if its target is missing. If an update renames something, this mod goes quiet instead of taking your game down with it.
+- No save data. Safe to add to or remove from a running save.
+- English and German.
+
+== CREDITS ==
+Thanks to hatti and the QualityBuilder maintainers, Haplo and Alaestor for Misc. Robots, and Vis for Static Quality. This is an independent compatibility patch, so please report problems to me, not to them.
+
+== KEYWORDS ==
+builder bots, idle robots, QoL, quality of life, automation, workaround, balance, work priority, crafting quality, mod conflict
+
+== TRANSPARENCY ==
+Made with the help of Claude Code, which did the typing while I did the blaming. Copyright is mine (Julius Berger), and the code is free under the MIT license (see LICENSE). Do whatever you want with it. A mention is nice, but beyond keeping the copyright notice the license asks for, not required.</description>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>hatti.qualitybuilder</packageId>
+            <displayName>QualityBuilder</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3512466087</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>Haplo.Miscellaneous.Robots</packageId>
+            <displayName>Misc. Robots</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/724602224</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>ludeon.rimworld</li>
+        <li>hatti.qualitybuilder</li>
+        <li>Haplo.Miscellaneous.Robots</li>
+        <li>Alaestor.MiscRobots.PlusPlus</li>
+        <li>vis.StaticQuality</li>
+    </loadAfter>
+</ModMetaData>

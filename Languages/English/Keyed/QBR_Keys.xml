@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <QBR.SettingsCategory>QualityBuilder × Misc. Robots</QBR.SettingsCategory>
+  <QBR.MissingMods>This compatibility patch needs QualityBuilder ({0}) and Misc. Robots ({1}). Missing parts are switched off.</QBR.MissingMods>
+
+  <QBR.Found>found</QBR.Found>
+  <QBR.Missing>missing</QBR.Missing>
+
+  <QBR.Enabled>Let robots work on quality builds</QBR.Enabled>
+  <QBR.Enabled.Tip>A robot may finish a QualityBuilder frame if its quality roll can reach the minimum quality set on that frame. Off = QualityBuilder's original behaviour (robots never touch quality builds).</QBR.Enabled.Tip>
+  <QBR.UseRobotSkill>Robots roll quality with their own skill</QBR.UseRobotSkill>
+  <QBR.UseRobotSkill.Tip>Vanilla treats Misc. Robots as mechanoids and rolls every robot's quality with a fixed skill of 10, no matter its tier. With this on, a robot uses the skill level from its definition (e.g. Construction 4 / 8 / 13 / 16 / 20 for the Misc. Robots++ tiers). Applies to everything robots make, not only buildings.</QBR.UseRobotSkill.Tip>
+  <QBR.RespectOverride>Respect QualityBuilder's "best constructor" override</QBR.RespectOverride>
+  <QBR.RespectOverride.Tip>If you picked one specific pawn in QualityBuilder to do all quality builds, robots stay off them as well.</QBR.RespectOverride.Tip>
+  <QBR.RespectExcludeMechs>Respect QualityBuilder's "exclude mechanoids" option</QBR.RespectExcludeMechs>
+  <QBR.RespectExcludeMechs.Tip>Robots count as mechanoids for QualityBuilder. Leave this off if that option is only meant for Biotech mechs.</QBR.RespectExcludeMechs.Tip>
+  <QBR.DebugLog>Debug log</QBR.DebugLog>
+  <QBR.DebugLog.Tip>Writes one line per robot and frame to the log explaining why it was allowed or blocked (throttled).</QBR.DebugLog.Tip>
+
+  <QBR.RulesHeader>Quality rules in use</QBR.RulesHeader>
+  <QBR.Source.Exact>Static Quality – exact: quality follows the skill thresholds ({0}).{1}</QBR.Source.Exact>
+  <QBR.Source.PM1>Static Quality – ±1: skill thresholds ({0}), then up to one step better or worse. A robot may build if the best case reaches the target.{1}</QBR.Source.PM1>
+  <QBR.Source.PM2>Static Quality – ±2: skill thresholds ({0}), then up to two steps better or worse. A robot may build if the best case reaches the target.{1}</QBR.Source.PM2>
+  <QBR.Source.Cheat>Static Quality – cheat: everything comes out at the top quality, so every robot may build.{0}</QBR.Source.Cheat>
+  <QBR.Source.Vanilla>Vanilla quality (Static Quality is not installed): the roll is random, so a robot may build if its chance to reach the target is at least the value below.</QBR.Source.Vanilla>
+  <QBR.Source.VanillaViaSQ>Static Quality is set to "vanilla quality": the roll is random, so a robot may build if its chance to reach the target is at least the value below.</QBR.Source.VanillaViaSQ>
+  <QBR.LegendaryNeedsInspiration> Legendary needs inspiration, which robots never get, so robots top out at Masterwork.</QBR.LegendaryNeedsInspiration>
+  <QBR.VanillaChance>Minimum chance to reach the target quality: {0}%</QBR.VanillaChance>
+  <QBR.VanillaChance.Tip>Only used with vanilla quality rules. Lower = robots join more often but cause more QualityBuilder tear-down-and-rebuild cycles.</QBR.VanillaChance.Tip>
+
+  <QBR.TableHeader>Which robot may build which target quality</QBR.TableHeader>
+  <QBR.TableNote>Columns are the minimum quality set on a QualityBuilder frame. The roll itself stays random as usual; if the result is too low, QualityBuilder tears it down and rebuilds as normal.</QBR.TableNote>
+  <QBR.Col.Robot>Robot</QBR.Col.Robot>
+  <QBR.Col.Skill>Skill</QBR.Col.Skill>
+  <QBR.NoRobots>No robot type with Construction work found.</QBR.NoRobots>
+</LanguageData>

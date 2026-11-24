@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <QBR.SettingsCategory>QualityBuilder × Misc. Robots</QBR.SettingsCategory>
+  <QBR.MissingMods>Diese Kompatibilitätsmod braucht QualityBuilder ({0}) und Misc. Robots ({1}). Fehlende Teile sind abgeschaltet.</QBR.MissingMods>
+
+  <QBR.Found>gefunden</QBR.Found>
+  <QBR.Missing>fehlt</QBR.Missing>
+
+  <QBR.Enabled>Roboter dürfen Qualitätsbauten übernehmen</QBR.Enabled>
+  <QBR.Enabled.Tip>Ein Roboter darf einen QualityBuilder-Rahmen fertigstellen, wenn sein Qualitätswurf die dort eingestellte Mindestqualität erreichen kann. Aus = Originalverhalten von QualityBuilder (Roboter fassen Qualitätsbauten nie an).</QBR.Enabled.Tip>
+  <QBR.UseRobotSkill>Roboter würfeln Qualität mit ihrem eigenen Skill</QBR.UseRobotSkill>
+  <QBR.UseRobotSkill.Tip>Vanilla hält Misc.-Robots-Roboter für Mechanoiden und würfelt ihre Qualität immer mit festem Skill 10, egal welche Stufe. Mit dieser Option nutzt ein Roboter den Skill aus seiner Definition (z. B. Bauen 4 / 8 / 13 / 16 / 20 bei den Misc.-Robots++-Stufen). Gilt für alles, was Roboter herstellen, nicht nur Gebäude.</QBR.UseRobotSkill.Tip>
+  <QBR.RespectOverride>QualityBuilders „bester Baumeister“-Festlegung beachten</QBR.RespectOverride>
+  <QBR.RespectOverride.Tip>Wenn in QualityBuilder eine bestimmte Figur für alle Qualitätsbauten festgelegt ist, halten sich auch die Roboter heraus.</QBR.RespectOverride.Tip>
+  <QBR.RespectExcludeMechs>QualityBuilders „Mechanoiden ausschließen“ beachten</QBR.RespectExcludeMechs>
+  <QBR.RespectExcludeMechs.Tip>Für QualityBuilder zählen Roboter als Mechanoiden. Aus lassen, wenn die Option nur für Biotech-Mechs gedacht ist.</QBR.RespectExcludeMechs.Tip>
+  <QBR.DebugLog>Debug-Protokoll</QBR.DebugLog>
+  <QBR.DebugLog.Tip>Schreibt je Roboter und Rahmen eine Zeile ins Log, warum er bauen darf oder nicht (gedrosselt).</QBR.DebugLog.Tip>
+
+  <QBR.RulesHeader>Aktive Qualitätsregeln</QBR.RulesHeader>
+  <QBR.Source.Exact>Static Quality – exakt: Qualität folgt den Skill-Schwellen ({0}).{1}</QBR.Source.Exact>
+  <QBR.Source.PM1>Static Quality – ±1: Skill-Schwellen ({0}), danach bis zu eine Stufe besser oder schlechter. Ein Roboter darf bauen, wenn der beste Fall das Ziel erreicht.{1}</QBR.Source.PM1>
+  <QBR.Source.PM2>Static Quality – ±2: Skill-Schwellen ({0}), danach bis zu zwei Stufen besser oder schlechter. Ein Roboter darf bauen, wenn der beste Fall das Ziel erreicht.{1}</QBR.Source.PM2>
+  <QBR.Source.Cheat>Static Quality – Cheat: alles kommt in höchster Qualität heraus, also darf jeder Roboter bauen.{0}</QBR.Source.Cheat>
+  <QBR.Source.Vanilla>Vanilla-Qualität (Static Quality nicht installiert): der Wurf ist zufällig, daher darf ein Roboter bauen, wenn seine Chance auf das Ziel mindestens den Wert unten erreicht.</QBR.Source.Vanilla>
+  <QBR.Source.VanillaViaSQ>Static Quality steht auf „Vanilla-Qualität“: der Wurf ist zufällig, daher darf ein Roboter bauen, wenn seine Chance auf das Ziel mindestens den Wert unten erreicht.</QBR.Source.VanillaViaSQ>
+  <QBR.LegendaryNeedsInspiration> Legendär braucht Inspiration, die Roboter nie bekommen – Roboter schaffen höchstens „meisterlich“.</QBR.LegendaryNeedsInspiration>
+  <QBR.VanillaChance>Mindestchance auf die Zielqualität: {0} %</QBR.VanillaChance>
+  <QBR.VanillaChance.Tip>Nur bei Vanilla-Qualitätsregeln. Niedriger = Roboter helfen öfter mit, verursachen aber mehr Abriss-und-Neubau-Runden durch QualityBuilder.</QBR.VanillaChance.Tip>
+
+  <QBR.TableHeader>Welcher Roboter welche Zielqualität bauen darf</QBR.TableHeader>
+  <QBR.TableNote>Spalten = an einem QualityBuilder-Rahmen eingestellte Mindestqualität. Gewürfelt wird wie immer; ist das Ergebnis zu schlecht, reißt QualityBuilder ab und baut neu.</QBR.TableNote>
+  <QBR.Col.Robot>Roboter</QBR.Col.Robot>
+  <QBR.Col.Skill>Skill</QBR.Col.Skill>
+  <QBR.NoRobots>Kein Robotertyp mit Bauarbeit gefunden.</QBR.NoRobots>
+</LanguageData>
