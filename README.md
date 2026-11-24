@@ -1,6 +1,6 @@
 # QualityBuilder × Misc. Robots
 
-RimWorld 1.6 compatibility mod (`juliusberger00.qualitybuilderrobots`). Lets Misc. Robots / Misc. Robots++
+RimWorld compatibility mod (`juliusberger00.qualitybuilderrobots`) for 1.6 and 1.7. Lets Misc. Robots / Misc. Robots++
 builder robots finish QualityBuilder frames whose minimum quality their quality roll can actually reach.
 
 ## How it works
@@ -29,5 +29,6 @@ dotnet build -c Release Source/QualityBuilderRobots/QualityBuilderRobots.csproj
 ```
 Output: `1.6/Assemblies/QualityBuilderRobots.dll`.
 
-Replaces "Feature D" of the personal ModSettingsOverrides mod (retired 2026-10-02, kept as
-`ModSettingsOverrides/Source/_retired/MiscRobotsQBCompat.cs.txt`).
+## Licence
+
+MIT, see `LICENSE`.
