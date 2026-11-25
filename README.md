@@ -1,5 +1,7 @@
 # QualityBuilder × Misc. Robots
 
+Source: https://github.com/jb-rimworld/qualitybuilder-misc-robots (MIT, see `LICENSE`).
+
 RimWorld compatibility mod (`juliusberger00.qualitybuilderrobots`) for 1.6 and 1.7. Lets Misc. Robots / Misc. Robots++
 builder robots finish QualityBuilder frames whose minimum quality their quality roll can actually reach.
 

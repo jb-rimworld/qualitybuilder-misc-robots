@@ -3,6 +3,7 @@
     <name>QualityBuilder × Misc. Robots</name>
     <author>juliusberger00</author>
     <packageId>juliusberger00.qualitybuilderrobots</packageId>
+    <url>https://github.com/jb-rimworld/qualitybuilder-misc-robots</url>
     <modVersion>1.1.0</modVersion>
     <supportedVersions>
         <li>1.6</li>
@@ -32,7 +33,7 @@ Vanilla treats Misc. Robots as mechanoids and rolls every robot's quality with a
 - A debug log that explains every allow/block decision.
 
 == COMPATIBILITY ==
-- RimWorld 1.6 and 1.7.
+- RimWorld 1.6 and 1.7. Built and tested on RimWorld 1.7. The 1.6 build is best effort and untested.
 - Requires: Harmony, QualityBuilder (Unofficial 1.6, which also covers 1.7), Misc. Robots. Optional: Static Quality, Misc. Robots++.
 - No hard references. QualityBuilder, Misc. Robots and Static Quality are reached by reflection, and every patch switches itself off if its target is missing. If an update renames something, this mod goes quiet instead of taking your game down with it.
 - No save data. Safe to add to or remove from a running save.
@@ -45,7 +46,8 @@ Thanks to hatti and the QualityBuilder maintainers, Haplo and Alaestor for Misc.
 builder bots, idle robots, QoL, quality of life, automation, workaround, balance, work priority, crafting quality, mod conflict
 
 == TRANSPARENCY ==
-Made with the help of Claude Code, which did the typing while I did the blaming. Copyright is mine (Julius Berger), and the code is free under the MIT license (see LICENSE). Do whatever you want with it. A mention is nice, but beyond keeping the copyright notice the license asks for, not required.</description>
+Made with the help of Claude Code, which did the typing while I did the blaming. Copyright is mine (Julius Berger), and the code is free under the MIT license (see LICENSE). Do whatever you want with it. A mention is nice, but beyond keeping the copyright notice the license asks for, not required.
+Source: https://github.com/jb-rimworld/qualitybuilder-misc-robots (MIT).</description>
     <modDependencies>
         <li>
             <packageId>brrainz.harmony</packageId>
