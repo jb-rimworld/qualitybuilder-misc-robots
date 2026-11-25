@@ -1,6 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <BaseIntermediateOutputPath>obj17/</BaseIntermediateOutputPath>
         <DefineConstants>$(DefineConstants);RW17</DefineConstants>
         <OutputType>Library</OutputType>
         <RootNamespace>QualityBuilderRobots</RootNamespace>
@@ -16,6 +15,7 @@
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <OutputPath>../../1.7/Assemblies/</OutputPath>
         <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
     </PropertyGroup>
 
     <ItemGroup>

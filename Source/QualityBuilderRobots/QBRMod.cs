@@ -36,7 +36,7 @@ namespace QualityBuilderRobots
         public QBRMod(ModContentPack content) : base(content)
         {
             Settings = GetSettings<QBRSettings>();
-            new Harmony("juliusberger00.qualitybuilderrobots").PatchAll();
+            new Harmony("juliusberger00.qualitybuilderrobots").PatchAll(typeof(QBRMod).Assembly);
             Log.Message($"[QualityBuilder Robots] loaded — QualityBuilder: {(QBAccess.Available ? "found" : "MISSING")}, " +
                         $"Misc. Robots: {(RobotAccess.Available ? "found" : "MISSING")}, " +
                         $"Static Quality: {(StaticQualityAccess.Available ? "found" : "not installed (vanilla quality rules)")}");

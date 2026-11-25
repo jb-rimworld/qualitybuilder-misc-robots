@@ -1,0 +1,7 @@
+<Project>
+  <!-- The 1.7 project keeps its restore output apart from the frozen 1.6 project that sits in the same folder.
+       Set here (before the SDK reads it) so MSBuild does not warn MSB3539. -->
+  <PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.rw17'))">
+    <BaseIntermediateOutputPath>obj17/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
